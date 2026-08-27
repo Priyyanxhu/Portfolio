@@ -1,0 +1,24 @@
+{
+  "name": "priyanshumlportfolio",
+  "version": "1.0.0",
+  "description": "Live: `http://localhost:8002/` (portfolio) + `http://localhost:8001/` (Smart Fog Vision demo)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "python build.py",
+    "build:prod": "python build-prod.py",
+    "build": "python build-prod.py",
+    "serve": "python serve.py --port 8002",
+    "serve:prod": "python -m http.server 8003 --directory dist",
+    "preview": "python -m http.server 8003 --directory dist",
+    "dev": "python serve.py --port 8002",
+    "lite": "python serve.py --port 8002"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
