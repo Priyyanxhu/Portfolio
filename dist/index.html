@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth fluid">
+<html lang="en" class="scroll-smooth fluid dark">
 <head>
 <meta charset="UTF-8"/>
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#6366F1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#070A14">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<script>try{const t=localStorage.getItem("theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.classList.add("dark")}catch(e){}</script>
+<script>document.documentElement.classList.add("dark");try{localStorage.setItem("theme","dark")}catch(e){}</script>
 <title>Priyanshu Pandey — Freelance Developer | Android Apps • Websites • AI/ML Models & Training</title>
 <meta name="description" content="Priyanshu Pandey — Freelance Developer (Android • Websites • AI/ML). I build full Android apps (Kotlin/Compose), modern websites (React/FastAPI) & AIML models with complete training pipelines. Creator of J.A.R.V.I.S. Android, Smart Fog Vision & Chrono."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -149,7 +149,6 @@
     <div class="flex items-center gap-1.5">
       <button id="fluidBtn" class="w-9 h-9 grid place-items-center rounded-xl border bg-[var(--card)] hover:border-[var(--accent)]/20 hover:shadow-md hover:-translate-y-[1px] transition-all shrink-0" style="border-color:var(--border)" aria-label="Toggle fluid layout" aria-pressed="true" title="Toggle full-width layout (Alt+W)"><i data-lucide="maximize-2" class="w-4 h-4"></i></button>
       <button id="fsBtn" class="w-9 h-9 grid place-items-center rounded-xl border bg-[var(--card)] hover:border-[var(--accent)]/20 hover:shadow-md hover:-translate-y-[1px] transition-all shrink-0" style="border-color:var(--border)" aria-label="Toggle fullscreen" aria-pressed="false" title="Toggle browser fullscreen (F11 / F)"><i data-lucide="expand" class="w-4 h-4"></i></button>
-      <button id="themeToggle" class="w-9 h-9 grid place-items-center rounded-xl border bg-[var(--card)] hover:border-[var(--accent)]/20 hover:shadow-md hover:-translate-y-[1px] transition-all shrink-0" style="border-color:var(--border)" aria-label="Toggle theme"><i data-lucide="moon" class="w-4 h-4"></i></button>
       <a href="#contact" class="hidden sm:inline-flex h-9 px-5 rounded-xl bg-[#0C0A09] dark:bg-white text-white dark:text-[#0C0A09] font-semibold text-[13px] items-center hover:opacity-90 transition btn-primary shadow-lg shadow-black/10">Contact →</a>
       <button id="menuBtn" class="md:hidden w-9 h-9 grid place-items-center rounded-xl border bg-[var(--card)]" style="border-color:var(--border)"><i data-lucide="menu" class="w-4 h-4"></i></button>
     </div>
@@ -797,15 +796,10 @@ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded'
 })();</script>
 <script>
   const htmlEl=document.documentElement;
-  const toggle=document.getElementById("themeToggle");
-  const saved=localStorage.getItem("theme");
-  if(saved==="dark"||(!saved&&window.matchMedia("(prefers-color-scheme: dark)").matches)) htmlEl.classList.add("dark");
+  htmlEl.classList.add("dark");
   function safeIcons(){ try{ if(window.lucide) lucide.createIcons(); }catch(e){} }
-  function refreshIcon(){ const isDark=htmlEl.classList.contains("dark"); toggle.innerHTML=isDark?'<i data-lucide="sun" class="w-4 h-4"></i>':'<i data-lucide="moon" class="w-4 h-4"></i>'; safeIcons(); }
   // defer first icon paint until lucide loads
   if(window.lucide) safeIcons(); else window.addEventListener("load", safeIcons, {once:true});
-  refreshIcon();
-  toggle.addEventListener("click",()=>{htmlEl.classList.toggle("dark");localStorage.setItem("theme",htmlEl.classList.contains("dark")?"dark":"light");refreshIcon();});
   // lite auto — save-data / low RAM / slow CPU → disable blurs & defer heavy work
   try{
     const conn=navigator.connection||navigator.mozConnection||navigator.webkitConnection;
