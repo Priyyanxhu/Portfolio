@@ -1,6 +1,7 @@
-# Priyanshu Pandey — Portfolio (Production Build)
+# Priyanshu Pandey — Portfolio (Production Build) — Freelance: Android • Web • AIML
 
-**Live Demos:** Smart Fog Vision → https://smart-fog-vision-sytem.onrender.com | Chrono → https://chrono-j9pf.onrender.com
+**Live Demos:** J.A.R.V.I.S. Android (D:\Jarvis, Kotlin/Compose, bilingual) | Smart Fog Vision → https://smart-fog-vision-sytem.onrender.com | Chrono → https://chrono-j9pf.onrender.com
+**Freelance:** Android apps (Kotlin/Compose) • Websites (React/FastAPI) • AIML models with full training (PyTorch→ONNX/TF Lite) — available for hire.
 
 This `dist/` folder is production-ready. Upload to any static host.
 

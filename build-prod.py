@@ -43,14 +43,14 @@ html_prod = html  # already points to https://smart-fog-vision-sytem.onrender.co
 # Add production meta: og, twitter, canonical, etc. Inject before </head> if not present
 if 'property="og:title"' not in html_prod:
     og = '''
-  <meta property="og:title" content="Priyanshu Pandey — AI Engineer | Computer Vision • Generative AI • MLOps"/>
-  <meta property="og:description" content="AI Engineer building vision & language systems that ship. Smart Fog Vision (YOLOv8 + DCP, 100% in-browser) & Chrono (FaceNet + Spring Boot, 90%+ match)."/>
+  <meta property="og:title" content="Priyanshu Pandey — Freelance Developer | Android Apps • Websites • AI/ML Models & Training"/>
+  <meta property="og:description" content="Freelance developer building Android apps (Kotlin/Compose), websites (React/FastAPI) & AIML models with full training. Creator of J.A.R.V.I.S. Android (3200 LOC, bilingual), Smart Fog Vision (YOLOv8 + DCP, 100% in-browser) & Chrono (FaceNet, 90%+). Available for hire."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://priyanshupandey.ai"/>
   <meta property="og:image" content="https://priyanshupandey.ai/og-image.png"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Priyanshu Pandey — AI Engineer"/>
-  <meta name="twitter:description" content="Computer Vision • Generative AI • MLOps — 10+ projects, 100% on-device AI"/>
+  <meta name="twitter:title" content="Priyanshu Pandey — Freelance Developer | Android • Web • AIML"/>
+  <meta name="twitter:description" content="Android • Websites • AIML with full training — 15+ projects shipped, Play Store ready, ONNX/TF Lite"/>
   <link rel="canonical" href="https://priyanshupandey.ai/"/>
 '''
     html_prod = html_prod.replace("</head>", og + "\n</head>")
@@ -126,6 +126,8 @@ Sitemap: https://priyanshupandey.ai/sitemap.xml
 sitemap = """<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://schemas.xmlsoap.org/sitemap/0.9">
   <url><loc>https://priyanshupandey.ai/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://priyanshupandey.ai/#jarvis</loc><priority>1.0</priority></url>
+  <url><loc>https://priyanshupandey.ai/#services</loc><priority>0.95</priority></url>
   <url><loc>https://priyanshupandey.ai/#smart-fog</loc><priority>0.9</priority></url>
   <url><loc>https://priyanshupandey.ai/#chrono</loc><priority>0.9</priority></url>
   <url><loc>https://smart-fog-vision-sytem.onrender.com</loc><priority>0.9</priority></url>
@@ -136,9 +138,10 @@ sitemap = """<?xml version="1.0" encoding="UTF-8"?>
 (DIST / "sitemap.xml").write_text(sitemap, encoding="utf-8")
 
 # 5. Add README for recruiter
-readme = """# Priyanshu Pandey — Portfolio (Production Build)
+readme = """# Priyanshu Pandey — Portfolio (Production Build) — Freelance: Android • Web • AIML
 
-**Live Demos:** Smart Fog Vision → https://smart-fog-vision-sytem.onrender.com | Chrono → https://chrono-j9pf.onrender.com
+**Live Demos:** J.A.R.V.I.S. Android (D:\\Jarvis, Kotlin/Compose, bilingual) | Smart Fog Vision → https://smart-fog-vision-sytem.onrender.com | Chrono → https://chrono-j9pf.onrender.com
+**Freelance:** Android apps (Kotlin/Compose) • Websites (React/FastAPI) • AIML models with full training (PyTorch→ONNX/TF Lite) — available for hire.
 
 This `dist/` folder is production-ready. Upload to any static host.
 
