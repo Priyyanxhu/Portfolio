@@ -16,18 +16,18 @@
     0.224,
     0.225
   ],
-  "best_val_acc": 0.9807692307692307,
-  "best_val_f1": 0.9794871794871796,
-  "train_time_min": 7.922063505649566,
-  "epochs_trained": 11,
+  "best_val_acc": 1.0,
+  "best_val_f1": 1.0,
+  "train_time_min": 2060.3041213035585,
+  "epochs_trained": 6,
   "dataset": {
-    "fog": 321,
-    "non_fog": 206,
-    "total": 527
+    "fog": 14675,
+    "non_fog": 14675,
+    "total": 29350
   },
   "splits": {
-    "train": 420,
-    "val": 52,
-    "test": 55
+    "train": 28270,
+    "val": 40,
+    "test": 1040
   }
 }

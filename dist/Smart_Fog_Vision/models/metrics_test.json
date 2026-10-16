@@ -1,16 +1,16 @@
 {
   "split": "test",
-  "loss": 0.13607142852111295,
+  "loss": 0.11817935418624144,
   "accuracy": 1.0,
   "macro_f1": 1.0,
   "confusion_matrix": [
     [
-      22,
+      520,
       0
     ],
     [
       0,
-      33
+      520
     ]
   ],
   "per_class": {
@@ -18,13 +18,13 @@
       "precision": 1.0,
       "recall": 1.0,
       "f1": 1.0,
-      "support": 22
+      "support": 520
     },
     "fog": {
       "precision": 1.0,
       "recall": 1.0,
       "f1": 1.0,
-      "support": 33
+      "support": 520
     }
   },
   "class_names": [

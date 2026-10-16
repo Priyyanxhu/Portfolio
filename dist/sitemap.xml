@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://schemas.xmlsoap.org/sitemap/0.9">
   <url><loc>https://priyanshupandey.ai/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://priyanshupandey.ai/#jarvis</loc><priority>1.0</priority></url>
-  <url><loc>https://priyanshupandey.ai/#services</loc><priority>0.95</priority></url>
-  <url><loc>https://priyanshupandey.ai/#smart-fog</loc><priority>0.9</priority></url>
-  <url><loc>https://priyanshupandey.ai/#chrono</loc><priority>0.9</priority></url>
+  <url><loc>https://priyanshupandey.ai/#projects</loc><priority>1.0</priority></url>
+  <url><loc>https://priyanshupandey.ai/#skills</loc><priority>0.95</priority></url>
+  <url><loc>https://priyanshupandey.ai/#experience</loc><priority>0.9</priority></url>
   <url><loc>https://smart-fog-vision-sytem.onrender.com</loc><priority>0.9</priority></url>
   <url><loc>https://priyanshupandey.ai/Smart_Fog_Vision/</loc><priority>0.7</priority></url>
   <url><loc>https://chrono-j9pf.onrender.com</loc><priority>0.8</priority></url>

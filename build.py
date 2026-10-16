@@ -34,7 +34,7 @@ if old in h:
 else:
     # already inlined? replace existing style
     import re
-    h = re.sub(r'<style id="tailwind-lite">.*?</style>', new, h, flags=re.S)
+    h = re.sub(r'<style id="tailwind-lite">.*?</style>', lambda _m: new, h, flags=re.S)
     print("Re-inlined existing tailwind-lite")
 
 # ensure lucide lite

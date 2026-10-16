@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+dist/Smart_Fog_Vision/models/foggyroad_backup/
+dist/Smart_Fog_Vision/models/pre_frida_backup/
+dist/Smart_Fog_Vision/models/yolo_runs/
+dist/Smart_Fog_Vision/models/bdd100k_seg_attr_cache.json
+*.onnx.data
+dist/Smart_Fog_Vision/yolov8n.pt
